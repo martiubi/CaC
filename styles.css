@@ -1,0 +1,84 @@
+#carousel-styles{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.dark{
+    filter: brightness(0.5);
+}
+
+.carousel-inner{
+    position:relative;
+}
+
+.carousel-caption{
+    position: absolute;
+    text-align: end;
+    top:30%;
+    margin-right: -7%;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+.carousel-p{
+    padding-left:20vw;
+    font-size: 1rem;
+}
+
+.oradores{
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+.card-group{
+    padding:0 10% 0 10%;
+}
+
+.oradores-p{
+    padding: 10px 0 0 0;
+    margin: 0%;
+    text-align: center;
+}
+
+.oradores-h2{
+    padding: 0 0 10px 0;
+    margin: 0%;
+    text-align: center;
+}
+
+.card{
+    padding:0 10px 0 10px;
+    text-align: left;
+}
+
+.card-text{
+    padding:0;
+    font-size: .7rem;
+}
+
+.publicidad{
+    margin-top:20px;
+}
+.col{
+    padding:0 3px 0 0 ;
+}
+.img-publicidad{
+    float:left;
+    max-width: 100%;
+}
+
+.texto-publicidad{
+    background-color: rgb(75, 74, 74);  
+    max-height: 100%;  
+    text-align: left;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.publicidad-p{
+    font-size: .9rem;
+    padding-right: 15%;
+}
