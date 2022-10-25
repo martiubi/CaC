@@ -1,0 +1,53 @@
+body {
+  box-sizing: border-box !important;
+  width: 100%;
+}
+
+.desc-card-group{
+    display: flex;
+    justify-content:  center;
+    margin: 2vw;
+}
+
+.desc-card{
+    margin: 0 15px 0 15px;
+    display: inline-block;
+}
+
+.texto-card{
+    margin: 15px;
+    text-align: center;
+    line-height: 45px;
+    padding: 5px 5px 0 5px;
+}
+
+.desc-p{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.desc-aclaracion{
+    font-size: 14px;
+    opacity: 50%;
+}
+
+.venta{
+    align-content: center;
+}
+
+.venta-p{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: larger;
+}
+
+.venta-h1{
+    margin-top: 0;
+}
+
+.formulario-cont{
+
+    display: block;
+
+    max-width: 100%;
+}
