@@ -61,58 +61,51 @@
 
     </nav>
 
+    <div class="container cuerpo">
         <!--DESCUENTOS CARDS-->
-        <div class=" desc-card-group">
-            <div class="card-deck">
-                <div class="card border-primary mb-3 desc-card" style="max-width: 18rem;">
-                    <div class="card-body texto-card">
-                        <h3>Estudiante</h3>
-                        <p>Tienen un descuento<br><span class="desc-p">80%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
-                    </div>     
-                </div>
-                <div class="card border-info mb-3 desc-card" style="max-width: 18rem;">
-                    <div class="card-body texto-card">
-                        <h3>Trainee</h3>
-                        <p>Tienen un descuento<br><span class="desc-p">50%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
-                    </div>     
-                </div>
-                <div class="card border-warning mb-3 desc-card" style="max-width: 18rem;">
-                    <div class="card-body texto-card">
-                        <h3>Junior</h3>
-                        <p>Tienen un descuento<br><span class="desc-p">15%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
-                    </div>     
-                </div>
-            </div>
-
+        <div class="row desc-card-group">
+                        <div class="card-deck">
+                            <div class="card border-primary mb-3 desc-card" style="max-width: 18rem;">
+                                <div class="card-body texto-card">
+                                    <h3>Estudiante</h3>
+                                    <p>Tienen un descuento<br><span class="desc-p">80%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
+                                </div>     
+                            </div>
+                            <div class="card border-info mb-3 desc-card" style="max-width: 18rem;">
+                                <div class="card-body texto-card">
+                                    <h3>Trainee</h3>
+                                    <p>Tienen un descuento<br><span class="desc-p">50%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
+                                </div>     
+                            </div>
+                            <div class="card border-warning mb-3 desc-card" style="max-width: 18rem;">
+                                <div class="card-body texto-card">
+                                    <h3>Junior</h3>
+                                    <p>Tienen un descuento<br><span class="desc-p">15%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
+                                </div>     
+                            </div>
+                        </div>
         </div>
-
+        
+        
         <!--VENTA-->
-
-        <div class="container venta">
-            <p class="venta-p">VENTA</p>
-            <h1 class="venta-h1">VALOR DEL TICKET $200</h1>
+        <div class="row venta">
+             <p class="venta-p">VENTA</p>
+             <h1 class="venta-h1">VALOR DEL TICKET $200</h1>
         </div>
-
         <!--FOMRULARIO-->
-        <div class="formulario-cont">
-            <form class="form-row">
-                <div class="row">
-                    <div class="col form-col">
-                        <input type="text" class="form-control" placeholder="Nombre">
-                    </div>
-                    <div class="col form-col">
-                        <input type="text" class="form-control" placeholder="Apellido">
-                    </div>
-                </div>
-            </form>  
-            <form class="form-row">
-                <div class="row">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
-                </div>
-            </form> 
-        </div>
 
+        <form class="row formulario-cont">
+            <input type="text" class="tickets" placeholder="Nombre">
+            <input type="text" class="tickets" placeholder="Apellido">
+            <input type="email" class="form-control" placeholder="Correo">
+
+        </form>
+
+    </div>
+
+    <!--SCRIPT-->
     <script src="js\bootstrap.min.js"></script>
     <script src="js\bootstrap.js"></script>
+
 </body>
 </html>
