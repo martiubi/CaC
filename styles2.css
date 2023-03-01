@@ -1,6 +1,7 @@
 body {
   box-sizing: border-box !important;
   width: 100%;
+  min-width: 360px;
 }
 
 .desc-card-group {
@@ -54,7 +55,7 @@ body {
 .formulario {
   max-width: 80%;
   padding: 0px;
-  margin: auto;
+  margin: 20px auto;
 }
 
 .btn {
@@ -73,7 +74,7 @@ footer {
 
 .footer-lista-li {
   display: inline-block;
-  padding: 1.2vw;
+  padding: 0.5vw;
 }
 
 .footer-lista-a {
