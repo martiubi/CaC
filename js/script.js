@@ -1,1 +1,3 @@
-console.log("hello world");
+console.log('hello world');
+
+var marti = 12;
