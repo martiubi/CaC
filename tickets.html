@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!---Bootstrap-->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/bootstrap.css">
-     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="styles2.css">
-     <link rel="stylesheet" href="normalize.css">
+    <!---Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="normalize.css">
 
     <title>Tickets</title>
 </head>
+
 <body>
 
     <!--BARRA DE NAVEGACIÓN-->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        
+        <div class="container">
+
             <div class="row" id="header">
 
                 <a class="navbar-brand" href="#">
-                    <img src="imagenes\codoacodo.png" alt="Logo" width="85" height="49" class="d-inline-block align-text-center">
+                    <img src="imagenes\codoacodo.png" alt="Logo" width="85" height="49"
+                        class="d-inline-block align-text-center">
                     Conf. Bs. As.
                 </a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-                        
-                 <ul class="navbar-nav">
 
-                     <li class="nav-item active">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">La conferencia<a>
-                    </li> 
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Los oradores</a>
                     </li>
@@ -53,59 +57,112 @@
                     </li>
 
                 </ul>
-                </div>
             </div>
+        </div>
 
-         </div>
-      </div>
+        </div>
+        </div>
 
     </nav>
 
-    <div class="container cuerpo">
-        <!--DESCUENTOS CARDS-->
+    <!--DESCUENTOS CARDS-->
+    <div class="container">
         <div class="row desc-card-group">
-                        <div class="card-deck">
-                            <div class="card border-primary mb-3 desc-card" style="max-width: 18rem;">
-                                <div class="card-body texto-card">
-                                    <h3>Estudiante</h3>
-                                    <p>Tienen un descuento<br><span class="desc-p">80%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
-                                </div>     
-                            </div>
-                            <div class="card border-info mb-3 desc-card" style="max-width: 18rem;">
-                                <div class="card-body texto-card">
-                                    <h3>Trainee</h3>
-                                    <p>Tienen un descuento<br><span class="desc-p">50%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
-                                </div>     
-                            </div>
-                            <div class="card border-warning mb-3 desc-card" style="max-width: 18rem;">
-                                <div class="card-body texto-card">
-                                    <h3>Junior</h3>
-                                    <p>Tienen un descuento<br><span class="desc-p">15%</span><br><span class="desc-aclaracion">*presentar documentación</span></p>
-                                </div>     
-                            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card border-primary mt-3">
+                        <div class="card-body texto-card">
+                            <h3>Estudiante</h3>
+                            <p>Tienen un descuento<br><span class="desc-p">80%</span><br><span
+                                    class="desc-aclaracion">*presentar documentación</span></p>
                         </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-success mt-3">
+                        <div class="card-body texto-card">
+                            <h3>Trainee</h3>
+                            <p>Tienen un descuento<br><span class="desc-p">50%</span><br><span
+                                    class="desc-aclaracion">*presentar documentación</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card border-warning mt-3">
+                        <div class="card-body texto-card">
+                            <h3>Junior</h3>
+                            <p>Tienen un descuento<br><span class="desc-p">15%</span><br><span
+                                    class="desc-aclaracion">*presentar documentación</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        
+
+
         <!--VENTA-->
         <div class="row venta">
-             <p class="venta-p">VENTA</p>
-             <h1 class="venta-h1">VALOR DEL TICKET $200</h1>
+            <div class="row ">
+                <p class="venta-p">VENTA</p>
+                <h1 class="venta-h1">VALOR DEL TICKET $200</h1>
+            </div>
         </div>
+
         <!--FOMRULARIO-->
 
-        <form class="row formulario-cont">
-            <input type="text" class="tickets" placeholder="Nombre">
-            <input type="text" class="tickets" placeholder="Apellido">
-            <input type="email" class="form-control" placeholder="Correo">
-
-        </form>
-
+        <div class="row formulario">
+            <div class="row">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="email" class="form-control" placeholder="Email" name="email">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="cant">Cantidad</label>
+                    <input type="number" class="form-control" id="cant" placeholder="Cantidad" min="1">
+                </div>
+                <div class="col">
+                    <label for="cat">Categoría</label>
+                    <select class="form-control" id="cat">
+                        <option disabled selected>Selecciona entradas</option>
+                        <option id="estudiantes">Estudiantes</option>
+                        <option id="trainee">Trainee</option>
+                        <option id="junior">Junior</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!--FOOTER-->
+
+    <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+        <ul class="container footer-lista">
+            <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Preguntas Frecuentes</a></li>
+            <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Contáctanos</a></li>
+            <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Prensa</a></li>
+            <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Conferencias</a></li>
+            <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Términos y condiciones</a></li>
+            <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Privacidad</a></li>
+            <li class="footer-lista-li"><a class=" footer-lista-a" href="#">Estudiantes</a></li>
+        </ul>
+    </footer>
+
 
     <!--SCRIPT-->
     <script src="js\bootstrap.min.js"></script>
     <script src="js\bootstrap.js"></script>
 
 </body>
+
 </html>
