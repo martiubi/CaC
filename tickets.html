@@ -112,28 +112,28 @@
 
         <!--FOMRULARIO-->
 
-        <div class="row formulario">
+        <form class="row" id="formulario">
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Nombre" name="nombre">
+                    <input type="text" class="form-control" placeholder="Nombre" name="nombre" id="nombre">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+                    <input type="text" class="form-control" placeholder="Apellido" name="apellido" id="apellido">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <input type="email" class="form-control" placeholder="Email" name="email">
+                    <input type="email" class="form-control" placeholder="Email" name="email" id="email">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <label for="cant">Cantidad</label>
-                    <input type="number" class="form-control" id="cant" placeholder="Cantidad" min="1">
+                    <input type="number" class="form-control" id="cant" name="cantidad" placeholder="Cantidad" min="1">
                 </div>
                 <div class="col">
                     <label for="cat">Categoría</label>
-                    <select class="form-control" id="cat">
+                    <select class="form-control" id="cat" name="categoria">
                         <option disabled selected>Selecciona entradas</option>
                         <option id="estudiantes">Estudiantes</option>
                         <option id="trainee">Trainee</option>
@@ -142,16 +142,36 @@
                 </div>
             </div>
             <div class="row">
+                <div class="error-message">Error. Hay campos incompletos!</div>
+            </div>
+
+
+            <div class="row">
                 <div class="col">
-                    <button type="button" class="btn btn-success">Borrar</button>
+                    <button type="button" class="btn btn-success" id="borrar">Borrar</button>
                 </div>
                 <div class="col">
-                    <button type="button" class="btn btn-success">Resumen</button>
+                    <button type="button" class="btn btn-success" id="resumen">Resumen</button>
                 </div>
             </div>
-        </div>
+        </form>
+
+
+
     </div>
 
+    <div class="resumen-message">
+        <h3>Total a pagar:</h3>
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-success" id="cancelar">Cancelar</button>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success" id="comprar">Comprar</button>
+            </div>
+        </div>
+
+    </div>
     <!--FOOTER-->
 
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">

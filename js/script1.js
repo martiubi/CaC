@@ -1,10 +1,10 @@
-console.log('hola mundo');
-
 document.addEventListener('DOMContentLoaded', function () {});
 
-const btnTickets = document.querySelector('.botonTickets');
+const btnTickets = document.getElementsByClassName('comprarTickets');
 
-btnTickets.addEventListener('click', function (e) {
-  e.preventDefault();
-  window.open = 'https://martiubi.github.io/CaC-TP-Bootstrap/tickets.html';
-});
+for (var i = 0; i < btnTickets.length; i++) {
+  btnTickets[i].addEventListener('click', function (e) {
+    e.preventDefault();
+    window.open('https://martiubi.github.io/CaC-TP-Bootstrap/tickets.html');
+  });
+}
