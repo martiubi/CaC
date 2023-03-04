@@ -111,7 +111,6 @@ footer {
   border: 1px solid rgba(38, 80, 35, 0.7);
   color: rgba(38, 80, 35);
   margin: 20px auto;
-  width: 35%;
   height: 200px;
   box-shadow: 0 0 3px;
   position: absolute;
@@ -130,7 +129,7 @@ footer {
   flex-wrap: nowrap;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 650px) {
   #cancelar,
   #comprar {
     font-size: 3vw;
@@ -140,7 +139,8 @@ footer {
   }
 
   .resumen-message {
-    width: 50%;
+    width: 40%;
+    padding-bottom: 0px;
   }
 }
 
