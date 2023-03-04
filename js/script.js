@@ -65,8 +65,7 @@ cancelarBtn.addEventListener('click', (e) => {
 
 comprarBtn.addEventListener('click', (e) => {
   resumenMessage[0].style.display = 'none';
-  exitoMessage[0];
-
+  exitoMessage[0].style.display = 'table';
   setTimeout(() => {
     exitoMessage[0].style.display = 'none';
   }, 2000);
