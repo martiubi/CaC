@@ -129,6 +129,11 @@ footer {
   flex-wrap: nowrap;
 }
 
+#cancelar,
+#comprar {
+  font-size: 15px;
+}
+
 @media (max-width: 650px) {
   #cancelar,
   #comprar {
@@ -139,7 +144,7 @@ footer {
   }
 
   .resumen-message {
-    width: 40%;
+    width: 35%;
     padding-bottom: 0px;
   }
 }
