@@ -41,7 +41,7 @@ resumenBtn.addEventListener('click', (e) => {
     setTimeout(function () {
       resumenMessage[0].scrollIntoView({
         behavior: 'smooth',
-        block: 'start',
+        block: 'center',
       });
     }, 100);
   }
