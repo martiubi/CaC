@@ -14,6 +14,7 @@ const errorMessage = document.getElementsByClassName('error-message');
 const resumenMessage = document.getElementsByClassName('resumen-message');
 const cancelarBtn = document.getElementById('cancelar');
 const comprarBtn = document.getElementById('comprar');
+const precioTot = document.getElementById('precio-final');
 
 //EventListener boton de resumen
 
@@ -33,14 +34,13 @@ resumenBtn.addEventListener('click', (e) => {
   if (Validation() === false) {
     errorMessage[0].style.display = 'block';
   } else {
-    // acá hay que hacer las cuentas y ponerlas en el mensaje.
+    let total = precioFinal(formData.categoria, formData.cantidad);
+    precioTot.innerHTML = '$' + total;
     resumenMessage[0].style.display = 'block';
   }
-
-  //console.log(formData);
 });
 
-// EventListener boton de borrar y cancelar520
+// EventListener boton de borrar y cancelar
 
 borrarBtn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -66,4 +66,20 @@ function Validation() {
   ) {
     return false;
   }
+}
+
+function precioFinal(categ, cant) {
+  let total = 0;
+  switch (categ) {
+    case 'Estudiante':
+      total = cant * 200 * 0.2;
+      break;
+    case 'Trainee':
+      total = cant * 200 * 0.5;
+      break;
+    case 'Junior':
+      total = cant * 200 * 0.85;
+      break;
+  }
+  return total;
 }

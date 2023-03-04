@@ -8,9 +8,9 @@
     <!---Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles2.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/normalize.css">
 
     <title>Tickets</title>
 </head>
@@ -66,6 +66,7 @@
     </nav>
 
     <!--DESCUENTOS CARDS-->
+
     <div class="container">
         <div class="row" id="desc-card-group">
             <div class="col card border-primary mt-3" id="desc-card">
@@ -93,8 +94,8 @@
             </div>
         </div>
 
-
         <!--VENTA-->
+
         <div class="row venta">
             <p class="venta-p">VENTA</p>
             <h1 class="venta-h1">VALOR DEL TICKET $200</h1>
@@ -125,16 +126,20 @@
                     <label for="cat">Categoría</label>
                     <select class="form-control" id="cat" name="categoria">
                         <option disabled selected>Selecciona entradas</option>
-                        <option id="estudiantes">Estudiantes</option>
+                        <option id="estudiantes">Estudiante</option>
                         <option id="trainee">Trainee</option>
                         <option id="junior">Junior</option>
                     </select>
                 </div>
             </div>
+
+            <!--MENSAJE CAMPOS INCOMPLETOS-->
+
             <div class="row">
                 <div class="error-message">ERROR. Hay campos incompletos!</div>
             </div>
 
+            <!--BOTONES FORMULARIO-->
 
             <div class="row">
                 <div class="col">
@@ -145,13 +150,13 @@
                 </div>
             </div>
         </form>
-
-
-
     </div>
+
+    <!--MENSAJE TOTAL A PAGAR-->
 
     <div class="resumen-message">
         <h3>Total a pagar:</h3>
+        <h3 id="precio-final"></h3>
         <div class="row">
             <div class="col">
                 <button type="button" class="btn btn-success" id="cancelar">Cancelar</button>
@@ -161,6 +166,7 @@
             </div>
         </div>
     </div>
+
     <!--FOOTER-->
 
     <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
@@ -176,7 +182,7 @@
     </footer>
 
 
-    <!--SCRIPT-->
+    <!--SCRIPTS-->
     <script src="js\bootstrap.min.js"></script>
     <script src="js\bootstrap.js"></script>
     <script src="js\script.js"></script>
