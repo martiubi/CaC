@@ -37,7 +37,13 @@ resumenBtn.addEventListener('click', (e) => {
     let total = precioFinal(formData.categoria, formData.cantidad);
     precioTot.innerHTML = '$' + total;
     resumenMessage[0].style.display = 'block';
-    resumenMessage[0].scrollIntoView();
+
+    setTimeout(function () {
+      resumenMessage[0].scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }, 100);
   }
 });
 
