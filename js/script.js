@@ -42,6 +42,7 @@ resumenBtn.addEventListener('click', (e) => {
       resumenMessage[0].scrollIntoView({
         behavior: 'smooth',
         block: 'center',
+        inline: 'center',
       });
     }, 100);
   }
