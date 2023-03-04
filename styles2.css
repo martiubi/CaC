@@ -4,22 +4,24 @@ body {
   min-width: 360px;
 }
 
-.desc-card-group {
-  max-width: 800px;
-  margin: 20px auto;
-  justify-content: space-between;
+#desc-card-group {
+  margin: 30px auto;
   align-items: center;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 740px) {
-  .desc-card-group {
-    height: 600px;
-  }
+#desc-card {
+  margin: auto 5px;
+  flex: 1;
+  min-width: 200px;
 }
+
 .texto-card {
   margin: 15px;
   text-align: center;
-  line-height: 45px;
+  line-height: 40px;
   padding: 5px 5px 0 5px;
 }
 
@@ -33,9 +35,10 @@ body {
   opacity: 50%;
 }
 
-.venta {
-  justify-content: center;
-  margin: 30px;
+.row .venta {
+  align-items: center;
+  margin: 40px;
+  width: 70%;
 }
 
 .venta-p {
@@ -51,12 +54,13 @@ body {
 
 #formulario .row {
   margin: 10px;
-  text-align: center;
   justify-content: center;
-}
-#formulario {
-  max-width: 80%;
+  width: 100%;
   padding: 0px;
+}
+
+#formulario {
+  width: 70%;
   margin: 20px auto;
 }
 
@@ -67,13 +71,13 @@ body {
 
 .error-message {
   margin-top: 5px;
-  width: 100%;
+  width: 50%;
   text-align: center;
-  background-color: rgba(28, 94, 28, 0.3);
+  background-color: rgba(202, 36, 30, 0.3);
   padding: 10px 5px;
   border-radius: 3px;
-  border: 1px solid rgba(38, 80, 35, 0.7);
-  color: rgba(38, 80, 35);
+  border: 1px solid rgba(202, 36, 30, 0.7);
+  color: rgba(202, 36, 30);
   display: none;
 }
 
