@@ -15,6 +15,7 @@ const resumenMessage = document.getElementsByClassName('resumen-message');
 const cancelarBtn = document.getElementById('cancelar');
 const comprarBtn = document.getElementById('comprar');
 const precioTot = document.getElementById('precio-final');
+const exitoMessage = document.getElementsByClassName('exito-message');
 
 //EventListener boton de resumen
 
@@ -59,6 +60,17 @@ borrarBtn.addEventListener('click', (e) => {
 cancelarBtn.addEventListener('click', (e) => {
   e.preventDefault();
   resumenMessage[0].style.display = 'none';
+  form.reset();
+});
+
+comprarBtn.addEventListener('click', (e) => {
+  resumenMessage[0].style.display = 'none';
+  exitoMessage[0].style.display = 'table';
+
+  setTimeout(() => {
+    exitoMessage[0].remove();
+  }, 2000);
+
   form.reset();
 });
 
